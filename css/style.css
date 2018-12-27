@@ -1,0 +1,384 @@
+body{
+    background: #141414;
+    font-family: 'Roboto Condensed';
+    cursor: url(../img/cursor1.png) 4 4, auto;
+}
+/* GERAL */
+
+a{ 
+    cursor: url(../img/cursor2.png) 4 4, auto; 
+}
+
+
+section .cta-1{
+    margin: 72px auto 0px auto;
+}
+
+
+.t-1{
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.cta-1{
+    height: 48px;
+    width: 180px;
+    display: block;
+    box-shadow: 0px 0px 3px #707070;
+    background:#242424;
+    border-radius: 4px;
+    margin-top: 48px;
+    font-size: 13px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 16px 0px;
+    text-align: center;
+    transition: .5s;
+}
+
+.cta-1:hover{
+    background: #3F35DE;
+    box-shadow: 0px 0px 3px #3F35DE;
+    transition: 1.3s;
+}
+
+p{
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.8em;
+    opacity: .6;
+}
+
+
+/*  */
+
+/*  HEADER */
+header{
+    margin: 0px auto 0px auto;
+    height: 1000px;
+    min-height: 1000px;
+    padding: 0 5%;
+    background: url(../img/main-img-2.svg);
+    background-repeat: no-repeat;
+    background-size: 830px;
+    background-position: right 0;
+}
+
+nav{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav > img{
+    height: 30px;
+}
+
+.btn-menu{
+    height: 48px;
+    width: 48px; 
+    border-radius: 100%;
+    border: 1px solid #fff;
+    padding: 12px 0px;;
+}
+
+.btn-menu::before, .btn-menu::after{
+    display: block;
+    content: '';
+    height: 2px;
+    width: 26px;
+    background: #fff;
+    margin: 6px auto;
+}
+
+header .t-1{
+    margin-top: 160px;
+    font-size: 72px;
+    animation-name: header-t1;
+    animation-duration: .6s;
+    animation-delay: .6s;
+    opacity: 0;
+    animation-fill-mode:forwards;
+}
+
+@keyframes header-t1{
+    from{
+    transform: translateX(-40px);
+    opacity: 0;
+    }
+    to{
+    transform: translateX(0px);
+    opacity: 1;
+    }
+}
+
+header p{
+    max-width: 380px;
+    animation-name: header-p;
+    animation-duration: 1s;
+    animation-delay: 1.2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes header-p{
+    from{
+    opacity: 0;
+    }
+    to{
+    opacity: .6;
+    }
+}
+
+
+/*  HEADER */
+
+/* DESENVOLVIMENTO */
+.desenvolvimento .t-1, .desenvolvimento > p{ text-align: center;}
+
+.desenvolvimento > p{
+    margin-bottom: 80px;
+}
+
+.recursos{
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.recursos .item{
+    width: 400px;
+    height: 140px;
+    box-shadow: 0px 0px 3px #707070;
+    border-radius: 4px;
+    background: #1A1A1A;
+    padding: 24px 30px;
+    margin-bottom: 32px;
+    animation-name: desenvolvimento;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    opacity: 0;
+    animation-fill-mode:forwards;
+}
+
+.recursos .item:nth-child(2){
+    animation-delay: 1.4s;
+}
+
+.recursos .item:nth-child(3){
+    animation-delay: 2s;
+}
+
+.recursos .item:nth-child(4){
+    animation-delay: 2.6s;
+}
+
+.recursos .item:nth-child(5){
+    animation-delay: 3.2s;
+}
+
+.recursos .item:nth-child(6){
+    animation-delay: 3.8s;
+}
+
+
+
+@keyframes desenvolvimento{
+    from{
+    transform: translateX(-20px);
+    opacity: 0;
+    }
+    to{
+    transform: translateX(0px);
+    opacity: 1;
+    }
+}
+
+.recursos .item img{ 
+    display: block;
+    max-height: 90px;
+    width: 90px;
+    float: left;
+}
+
+.recursos .info{
+   float: right;
+}
+
+.recursos .info span{
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+ }
+
+ .recursos .info p{
+     font-size: 15px;
+     opacity: .6
+ }
+
+.recursos .item .bar{
+    height: 14px;
+    width: 220px;
+    background: #222;
+    display: block;
+    margin: 12px 0px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.recursos .item .bar::after{
+    content: '';
+    display: block;
+    height: 100%;
+    width: 80%;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    background: #3F35DE;
+    box-shadow: 0px 0px 6px #3F35DE;
+}
+
+/*  */
+
+/* PROJETOS */
+.projetos{
+    padding: 60px 0 120px 0;
+    margin: 220px 0 120px 0;
+    background: #1A1A1A;
+    box-shadow: 0px 0px 3px #707070;
+}
+
+.projetos .t-1{ text-align: center;}
+
+.projetos .stick-slide{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.stick-slide img{
+    display: block;
+    height: 440px;
+    min-width: 700px;
+    margin: 0 auto;
+}
+
+.projetos .stick-slide::after{
+    content: '';
+    display: block;
+    height: 300px;
+    width: 400px;
+    background: url(../img/img-projeto.jpg) no-repeat;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -10%;
+    opacity: .1;
+}
+
+.projetos p{
+    margin-bottom: 72px;
+    text-align: center;
+}
+
+
+
+
+/*  PROJETOS */
+
+
+
+/*  QUALIDADE  */
+.qualidade{
+    padding: 120px 0px 0px 0px;
+    height: 800px;
+    min-height: 800px;
+    background: url(../img/qualidade-img.svg) no-repeat;
+    background-size: 800px;
+    background-position-y: 60px;
+    padding-right: 7.5%;
+}
+
+.qualidade .container{ float: right; width: 360px; padding-top: 80px;}
+
+.qualidade .t-1{
+    margin-bottom: 6px;
+}
+
+.qualidade .txt{
+    margin-bottom: 60px;
+    text-align: left;
+}
+
+/*  QUALIDADE */
+
+
+
+/* CONTATO */
+.contato-h{
+    padding: 100px 0 120px 0;
+}
+
+.contato-h .t-1{
+    text-align: center;
+}
+
+.contato-h p{ text-align: center; margin-bottom: 72px;}
+
+.contato-h img{
+    display: block;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+@media only screen and (min-width: 1650px) {
+
+    
+    header{
+        background: url(../img/main-img-full.svg);
+        background-repeat: no-repeat;
+        background-size: 1100px;
+        background-position: right 0;
+        padding: 0 10%;
+    }
+
+    header .t-1{
+        margin-top: 220px;
+        font-size: 72px;
+    }
+
+    .desenvolvimento .t-1{
+        margin-top: 120px;;
+    }
+
+
+    .recursos{
+        max-width: 70%;
+    }
+
+    .projetos{
+        margin: 220px 0 220px 0;
+    }
+
+    .qualidade{
+        height: 1000px;
+        min-height: 1000px;
+        background: url(../img/qualidade-img.svg) no-repeat;
+        background-size: 1000px;
+        padding-right: 20%;
+    }
+
+    /* CONTATO */
+
+.contato-h img{
+    display: block;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+}
